@@ -1,0 +1,14 @@
+your_list = []
+word = input('Enter a word >')
+
+while word != 'stop':
+    your_list.append(word)
+    word = input('Enter a word >')
+print(your_list)
+
+for i in range(0, len(your_list)):
+    if int(i) % 2 == 0:
+        word = your_list[i]
+        multiple = i * len(word)
+        your_list[i] = multiple
+print(your_list)
